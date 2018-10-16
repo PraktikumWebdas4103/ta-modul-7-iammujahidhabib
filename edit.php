@@ -20,17 +20,17 @@
 		<tr>
 			<td>Jenis Kelamin</td>
 			<td>:</td>
-			<td><input type="radio" name="gender" value="Laki laki" required> Laki-laki<br>
-  				<input type="radio" name="gender" value="Perempuan" required> Perempuan</td>
+			<td><input type="radio" name="gender" value="LakiLaki" <?php echo $data['jk'] == "LakiLaki" ? "checked" : ""; ?>> Laki-laki<br>
+  				<input type="radio" name="gender" value="Perempuan" <?php echo $data['jk'] == "Perempuan" ? "checked" : ""; ?>> Perempuan</td>
 		</tr>
 		<tr>
 			<td>Program Studi</td>
 			<td>:</td>
 			<td><select name="prodi" required>
-					<option value="D3 Sistem Informasi"> D3 Sistem Informasi</option>
-					<option value="D3 Teknik Telekomunikasi"> D3 Teknik Telekomunikasi</option>
-					<option value="S1 MBTI"> S1 MBTI</option>
-					<option value="S1 Akutansi"> S1 Akutansi</option>
+					<option value="D3 Sistem Informasi" <?php echo $data['prodi'] == "D3 Sistem Informasi" ? "selected='selected'" : ""; ?>> D3 Sistem Informasi</option>
+					<option value="D3 Teknik Telekomunikasi" <?php echo $data['prodi'] == "D3 Teknik Telekomunikasi" ? "selected='selected'" : ""; ?>> D3 Teknik Telekomunikasi</option>
+					<option value="S1 MBTI" <?php echo $data['prodi'] == "S1 MBTI" ? "selected='selected'" : ""; ?>> S1 MBTI</option>
+					<option value="S1 Akutansi" <?php echo $data['prodi'] == "S1 Akutansi" ? "selected='selected'" : ""; ?>> S1 Akutansi</option>
 				</select>
 			</td>
 		</tr>
@@ -38,8 +38,8 @@
 			<td>Fakultas</td>
 			<td>:</td>
 			<td><select name="fak" required>
-					<option value="FIT"> FIT</option>
-					<option value="FEB"> FEB</option>
+					<option value="FIT" <?php echo $data['fakultas'] == "FIT" ? "selected='selected'" : ""; ?>> FIT</option>
+					<option value="FEB" <?php echo $data['fakultas'] == "FEB" ? "selected='selected'" : ""; ?>> FEB</option>
 				</select>
 			</td>
 		</tr>
